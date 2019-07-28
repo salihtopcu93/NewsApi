@@ -15,7 +15,7 @@ protocol NewsViewDelegate: class {
 
 class ResourcesViewModel {
     var result : News?
-    var delegate: NewsViewDelegate?
+    weak var delegate: NewsViewDelegate?
 
     func getNews() {
         setLoading(true)

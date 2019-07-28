@@ -15,7 +15,7 @@ protocol DetailViewDelegate: class {
 
 class DetailViewModel {
     var result : Details?
-    var delegate: DetailViewDelegate?
+    weak var delegate: DetailViewDelegate?
     var filteredResult: Details?
     var id: String?
     var timer: Timer = Timer()
